@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+.container{
+    height:300px;
+    
+    width:700px;
+    margin-top:200px;
+    display: inline-flex;
+    flex-direction: row; 
+    justify-content:space-evenly;
+    align-items: center;
+}
+.box1,.box2,.box3,.box4{
+ height:60px;
+ width:60px;
+ background-color:white;
+ margin:20px;
+ border-radius: 50%;
+ display: inline-flex;
+ animation-name: loder ;
+ animation-duration:1s;
+ animation-timing-function: ease;
+ animation-iteration-count: infinite;
+}
+.box1{
+    animation-delay:0.2s;
+}
+.box2{
+    animation-delay:0.4s;
+}
+.box3{
+    animation-delay:0.6s;
+}
+.box4{
+    animation-delay:0.8s;
+}
+@keyframes loder{
+    0%{
+        height:60px;
+ width:60px;
+    }
+    50%{
+        height:40px;
+ width:40px;
+    }
+}
